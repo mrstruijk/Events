@@ -3,10 +3,7 @@ using System;
 
 namespace _mrstruijk.Events
 {
-	/// <summary>
-	/// Maintain a list of Actions here
-	/// </summary>
-	public class EventSystem : EventsBase
+	public static class EventSystem
 	{
 		#region MonoBehaviour Cycle
 		public static Action OnAwakeAction;
@@ -21,9 +18,21 @@ namespace _mrstruijk.Events
 		public static Action OnDestroyAction;
 		#endregion
 
-		#region Custom Actions
+		#region Define Custom Actions here
 		public static Action OnLoadAction;
 
+		#endregion
+
+		#region Methods
+		public static void Invoke(Action eventToInvoke)
+		{
+			eventToInvoke?.Invoke();
+		}
+
+		public static void Invoke<T>(Action<T> eventToInvoke, T value)
+		{
+			eventToInvoke?.Invoke(value);
+		}
 		#endregion
 	}
 }

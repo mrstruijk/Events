@@ -7,37 +7,37 @@ namespace _mrstruijk.Events
 	{
 		private void Awake()
 		{
-			EventsBase.Invoke(EventSystem.OnAwakeAction);
+			EventSystem.Invoke(EventSystem.OnAwakeAction);
 		}
 
 
 		private void OnEnable()
 		{
-			EventsBase.Invoke(EventSystem.OnEnableAction);
+			EventSystem.Invoke(EventSystem.OnEnableAction);
 		}
 
 
 		private void Start()
 		{
-			EventsBase.Invoke(EventSystem.OnStartAction);
+			EventSystem.Invoke(EventSystem.OnStartAction);
 		}
 
 
 		private void FixedUpdate()
 		{
-			EventsBase.Invoke(EventSystem.OnFixedUpdateAction);
+			EventSystem.Invoke(EventSystem.OnFixedUpdateAction);
 		}
 
 
 		private void Update()
 		{
-			EventsBase.Invoke(EventSystem.OnUpdateAction);
+			EventSystem.Invoke(EventSystem.OnUpdateAction);
 		}
 
 
 		private void LateUpdate()
 		{
-			EventsBase.Invoke(EventSystem.OnLateUpdateAction);
+			EventSystem.Invoke(EventSystem.OnLateUpdateAction);
 		}
 
 
@@ -45,26 +45,26 @@ namespace _mrstruijk.Events
 		{
 			if (pauseStatus == true)
 			{
-				EventsBase.Invoke(EventSystem.OnApplicationPauseAction);
+				EventSystem.Invoke(EventSystem.OnApplicationPauseAction);
 			}
 		}
 
 
 		private void OnApplicationQuit()
 		{
-			EventsBase.Invoke(EventSystem.OnApplicationQuitAction);
+			EventSystem.Invoke(EventSystem.OnApplicationQuitAction);
 		}
 
 
 		private void OnDisable()
 		{
-			EventsBase.Invoke(EventSystem.OnDisableAction);
+			EventSystem.Invoke(EventSystem.OnDisableAction);
 		}
 
 
 		private void OnDestroy()
 		{
-			EventsBase.Invoke(EventSystem.OnDestroyAction);
+			EventSystem.Invoke(EventSystem.OnDestroyAction);
 		}
 	}
 }
