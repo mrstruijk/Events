@@ -1,9 +1,7 @@
 {
     "name": "mrstruijk.Events",
     "rootNamespace": "",
-    "references": [
-        "GUID:1ed2c0ed3d2ed484a96b4b1bb695543d"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
