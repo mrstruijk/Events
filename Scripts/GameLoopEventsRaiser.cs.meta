@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 44c9f514b61d44555840d6b2020007d7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - onAwakeEvent: {fileID: 11400000, guid: 16dcd49d67ea94657bef816d311da6f1, type: 2}
+  - onStartEvent: {fileID: 11400000, guid: c9613229bc0a248c9902e36bc77c2d2c, type: 2}
+  - afterStartEvent: {fileID: 11400000, guid: af980363e53c6445c86b3f4a66ba7cda, type: 2}
+  - onUpdateEvent: {fileID: 11400000, guid: b1ab72ad7edfd4525bba109250ea554f, type: 2}
+  - everyXSecondsEvent: {fileID: 11400000, guid: fc0cabc56f0dc4540937fd3c5587b901,
+      type: 2}
+  - onDisableEvent: {fileID: 11400000, guid: bbf0c961161f84632825ba504736aaa3, type: 2}
+  - onQuitEvent: {fileID: 11400000, guid: 535b2237298144597afecb9639f5f968, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
