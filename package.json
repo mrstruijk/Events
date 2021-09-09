@@ -1,0 +1,11 @@
+{
+  "name": "com.mrstruijk.events",
+  "version": "0.0.1-preview.1",
+  "displayName": "Event System",
+  "description": "This package package contains C# and ScriptableObject event systems",
+  "unity": "2021.1",
+  "author": {
+    "name": "Maarten R. Struijk Wilbrink",
+    "email": "m.r.struijk@fsw.leidenuniv.nl"
+  }
+}
