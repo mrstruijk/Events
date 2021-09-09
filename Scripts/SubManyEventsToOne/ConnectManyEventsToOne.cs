@@ -5,20 +5,21 @@ using UnityEngine.Events;
 
 public abstract class ConnectManyEventsToOne : MonoBehaviour
 {
-	private List<UnityEvent> responseEvent;
+	private List<UnityEvent> responseEvents;
+
 
 	public void Subscribe(UnityEvent subscriberEvent)
 	{
-		responseEvent ??= new List<UnityEvent>();
+		responseEvents ??= new List<UnityEvent>();
 
-		if (responseEvent.Contains(subscriberEvent))
+		if (responseEvents.Contains(subscriberEvent))
 		{
 			return;
 		}
 
-		responseEvent.Add(subscriberEvent);
+		responseEvents.Add(subscriberEvent);
 
-		responseEvent[responseEvent.Count - 1].AddListener(ListenerAction);
+		responseEvents[responseEvents.Count - 1].AddListener(ListenerAction);
 	}
 
 
@@ -30,21 +31,21 @@ public abstract class ConnectManyEventsToOne : MonoBehaviour
 
 	public void UnSubscribe(UnityEvent subscriberEvent)
 	{
-		if (!responseEvent.Contains(subscriberEvent))
+		if (!responseEvents.Contains(subscriberEvent))
 		{
 			return;
 		}
 
-		responseEvent[responseEvent.IndexOf(subscriberEvent)].RemoveListener(ListenerAction);
-		responseEvent.Remove(subscriberEvent);
+		responseEvents[responseEvents.IndexOf(subscriberEvent)].RemoveListener(ListenerAction);
+		responseEvents.Remove(subscriberEvent);
 	}
 
 
 	private void OnDisable()
 	{
-		for (int i = 0; i < responseEvent.Count; i++)
+		foreach (var response in responseEvents)
 		{
-			responseEvent[i].RemoveListener(ListenerAction);
+			response.RemoveListener(ListenerAction);
 		}
 	}
 }
