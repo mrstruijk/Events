@@ -3,7 +3,7 @@ using System;
 
 namespace _mrstruijk.Events
 {
-	public static class EventSystem
+	public class EventSystem
 	{
 		#region MonoBehaviour Cycle
 		public static Action OnAwakeAction;
@@ -20,8 +20,10 @@ namespace _mrstruijk.Events
 
 		#region Define Custom Actions here
 		public static Action OnLoadAction;
-
+		public static Action OnOverseerButtonClicked;
+		public static Action OnOverseerTabClicked;
 		#endregion
+
 
 		#region Methods
 		public static void Invoke(Action eventToInvoke)
