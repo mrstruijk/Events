@@ -8,15 +8,6 @@ namespace _mrstruijk.Events
 	/// </summary>
 	public class EventSystem : EventsBase
 	{
-		#region Constructor
-		private static EventSystem Instance;
-
-		public EventSystem()
-		{
-			Instance ??= this;
-		}
-		#endregion
-
 		#region MonoBehaviour Cycle
 		public static Action OnAwakeAction;
 		public static Action OnEnableAction;
@@ -29,7 +20,6 @@ namespace _mrstruijk.Events
 		public static Action OnDisableAction;
 		public static Action OnDestroyAction;
 		#endregion
-
 
 		#region Custom Actions
 		public static Action OnLoadAction;
