@@ -20,6 +20,7 @@ namespace _mrstruijk.Events
 
 		#region Define Custom Actions here
 		public static Action<string> OnSaveUIAction;
+		public static Action OnSaveAction;
 		public static Action OnLoadAction;
 		public static Action OnOverseerButtonClicked;
 		public static Action OnOverseerTabClicked;
