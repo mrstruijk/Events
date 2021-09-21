@@ -1,7 +1,7 @@
 using UnityEngine;
 
 
-namespace _mrstruijk.Events
+namespace mrstruijk.Events
 {
 	public class MonoBehaviourEvents : MonoBehaviour
 	{

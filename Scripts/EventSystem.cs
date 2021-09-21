@@ -1,9 +1,9 @@
 using System;
 
 
-namespace _mrstruijk.Events
+namespace mrstruijk.Events
 {
-	public class EventSystem
+	public static class EventSystem
 	{
 		#region MonoBehaviour Cycle
 		public static Action OnAwakeAction;
@@ -19,12 +19,16 @@ namespace _mrstruijk.Events
 		#endregion
 
 		#region Define Custom Actions here
+
+		public static Action ConnectingToMaster;
+		public static Action OnJoinedRoom;
 		public static Action<string> OnSaveUIAction;
 		public static Action OnSaveAction;
 		public static Action OnLoadAction;
 		public static Action OnOverseerButtonClicked;
 		public static Action OnOverseerTabClicked;
-
+		public static Action<string> AreaSceneHasBeenLoaded;
+		public static Action BaseScenesHaveBeenLoaded;
 
 		#endregion
 
