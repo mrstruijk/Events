@@ -29,7 +29,7 @@ namespace mrstruijk.Events
 		public static Action OnOverseerTabClicked;
 		public static Action<string> AreaSceneHasBeenLoaded;
 		public static Action BaseScenesHaveBeenLoaded;
-
+		public static Action LanguageHasBeenChanged;
 		#endregion
 
 
