@@ -27,7 +27,7 @@ namespace mrstruijk.Events
 		public static Action OnLoadAction;
 		public static Action OnOverseerButtonClicked;
 		public static Action OnOverseerTabClicked;
-		public static Action<string> AreaSceneHasBeenLoaded;
+		public static Action<string> SceneHasBeenLoaded;
 		public static Action BaseScenesHaveBeenLoaded;
 		public static Action LanguageHasBeenChanged;
 		#endregion
