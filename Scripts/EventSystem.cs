@@ -30,6 +30,7 @@ namespace mrstruijk.Events
 		public static Action<string> SceneHasBeenLoaded;
 		public static Action BaseScenesHaveBeenLoaded;
 		public static Action LanguageHasBeenChanged;
+		public static Action<string> PlayerJoined;
 		#endregion
 
 
